@@ -1,0 +1,56 @@
+.modalOverlay {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(100, 100, 100, 0.4);
+  animation: modalAnimation 0.5s;
+
+  .modalBox {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 520px;
+    padding-bottom: 13px;
+    border-radius: 8px;
+  }
+
+  .formModal {
+    margin-top: 8px;
+    background-color: var(--grey-3);
+    width: 90%;
+    padding: 10px 0px;
+  }
+
+  .ModalHeaders {
+    width: 100%;
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .btn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+  }
+}
+
+@keyframes modalAnimation {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,48 @@
+.list{
+    padding-bottom: 3.125rem;
+}
+
+.price {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.description{
+    padding-top: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.buttons{
+    display: flex;
+    gap: 0.625rem;
+}
+
+@media (min-width: 700px) {
+    .list{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        height: 13.125rem;
+
+        img{
+            height: 100%;
+        }
+    }
+
+    .container{
+        align-items: center;
+        padding-left: 1.25rem;
+        width: 75%;
+    }
+
+
+}

@@ -1,0 +1,68 @@
+.bannerBox {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    max-width: 640px;
+    width: 100%;
+    border-radius: 40px;
+  }
+}
+
+.titleBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonMore {
+  font-family: var(--font-secondary);
+  color: var(--black);
+  font-weight: 500;
+  font-size: 0.875rem;
+  margin-left: 1.5625rem;
+}
+
+.buttonMore:hover {
+  transform: scale(1.1);
+}
+
+.logoTitle {
+  text-align: center;
+}
+
+.productsList {
+  display: flex;
+  overflow-x: scroll;
+  gap: 25px;
+}
+
+@media (min-width: 700px) {
+  .logoTitle {
+    text-align: left;
+  }
+
+  .bannerBox {
+    display: flex;
+    flex-direction: row;
+
+    img {
+      width: 70%;
+    }
+  }
+
+  .titleBox {
+    margin-left: 3.75rem;
+
+    button {
+      margin-top: 5.875rem;
+    }
+  }
+
+  .productsList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    overflow-x: hidden;
+  }
+}

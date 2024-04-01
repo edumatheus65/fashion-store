@@ -1,0 +1,23 @@
+.flexBox {
+  display: flex;
+  justify-content: space-between;
+}
+.icons {
+  display: flex;
+  gap: 30px;
+}
+.user {
+  color: var(--black);
+}
+.cartButton {
+  position: relative;
+}
+.productsNumber {
+  position: absolute;
+  top: -5px;
+  left: 17px;
+  background-color: var(--black);
+  border-radius: 50px;
+  color: var(--white);
+  padding: 3px;
+}

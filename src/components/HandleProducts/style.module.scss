@@ -1,0 +1,60 @@
+.section {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 2.5rem;
+}
+
+.button {
+  display: flex;
+  align-items: flex-start;
+}
+
+.subTitle {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.521);
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 700px) {
+  .button {
+    align-items: center;
+  }
+
+  .section {
+    height: 43.75rem;
+  }
+
+  .container {
+    width: 97%;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: clamp(0.7rem, 4vw, 0.75rem);
+  background-color: var(--black);
+  width: 100%;
+
+  p {
+    text-align: center;
+  }
+}
